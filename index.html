@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argon Dashboard</title>
+    <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Argon CSS -->
+    <link type="text/css" href="/assets/css/argon.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-horizontal navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="#">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <span class="nav-link-inner--text d-lg-none">Download</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="#">
+                            <i class="ni ni-credit-card"></i>
+                            <span class="nav-link-inner--text d-lg-none">Card</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-link-icon" href="#">
+                            <i class="fas fa-bell "></i>
+                            <span class="nav-link-inner--text d-lg-none">Notifications</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="#">
+                            <i class="fas fa-user-circle"></i>
+                            <span class="nav-link d-lg-none">Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex align-items-center   justify-content-between  bg-secondary my-4">
+        <h2>Clients</h2>
+        <form class="d-flex  justify-content-between w-50 ml-5">
+            <input class="form-control " type="search" placeholder="Search by customer name/email" aria-label="Search">
+            <button class="btn btn-default ml-3" type="submit">Search</button>
+        </form>
+
+        <button type="button" class="btn btn-default ml-5">Add new customer</button>
+    </div>
+
+
+
+
+    <div class="table-responsive  container">
+
+
+
+
+        <div>
+            <table class="table align-items-center ">
+                <thead class="thead-light ">
+                    <tr>
+                        <th scope="col" class="sort" data-sort="client-id">CLIENT ID</th>
+                        <th scope="col" class="sort" data-sort="closing-agent">CLOSING AGENT</th>
+                        <th scope="col" class="sort" data-sort="company">COMPANY</th>
+                        <th scope="col" class="sort" data-sort="order">ORDER</th>
+                        <th scope="col" class="sort" data-sort="invoice-paid">INVOICE PAID</th>
+
+                    </tr>
+                </thead>
+                <tbody class="list">
+                    <!-- dynamic content -->
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Argon JS -->
+    <script src="/assets/js/argon.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
